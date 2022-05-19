@@ -1,4 +1,6 @@
-
+# Web site desenvolvido em html, css e javascript. 
+# Para o registro e autenticação de usuarios foi utilizado o firebase
+# Material UI: Bootstrap
 
 #  instruções para simulação
 
