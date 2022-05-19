@@ -1,0 +1,98 @@
+/*   Created by Camila Silva
+     Since 10/05/2022
+     Login System in Html, Css and JavaScript
+     A part of the style was developed in Bootstrap
+     this css is responsible for styling the login page */
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Oswald:wght@200;300;400&display=swap');
+
+/* the style will work on screens larger than 768px */
+@media(min-width: 768px){
+    /* taking all the default settings */
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    /* applying a gradient background color to the body */
+    body{
+        background: rgb(199,154,174);
+        background: radial-gradient(circle, rgba(199,154,174,1) 19%, rgba(149,158,168,1) 100%);
+    }
+
+    /* styling header text */
+    .title-text h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    /* styling the background square that the form will have */
+    .container{
+        background-color: #ffffff59;
+        width: 35%; 
+        border-radius: 4%;
+        padding: 30px;
+        box-shadow: 6px 6px 1px 0px rgba(0, 0, 0, 0.447);
+    }
+
+    /* styling the form text font */
+    .form-login{
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 2px;
+    }
+
+    /* filtering the h1 of the form and styling it */
+    .form-login h1{
+        font-family: 'Oswald', sans-serif; 
+        color: rgb(0, 0, 0);
+    }
+
+    /* styling form inputs */
+    .form-group input{
+        background-color: rgba(0, 0, 0, 0.461);
+        color: rgb(0, 0, 0);
+    }
+
+    /* styling the background of the inputs */
+    .form-group input::placeholder{
+        color: rgb(0, 0, 0);
+    }
+
+    /* styling form labels */
+    .form-group label{  
+        color: rgb(0, 0, 0);
+    }
+
+    /* styling login button */
+    .btn-login button{
+      width: 30%;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: black;
+      background: rgb(199,154,174);
+      background: radial-gradient(circle, rgba(199,154,174,1) 19%, rgba(149,158,168,1) 100%);
+    }
+
+    /* styling the registration link */
+    .text-register a{
+        color: black;
+    }
+
+    /* styling ICONS */
+    .bi-eye-slash{
+        position: absolute;
+        top: 18px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    /* adding a cursor pointer in the registration link */
+    .link-danger{
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,44 @@
+/*   Created by Camila Silva
+     Since 10/05/2022
+     Login System in Html, Css and JavaScript
+     A part of the style was developed in Bootstrap 
+     this css is responsible for styling the show users page*/
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Oswald:wght@200;300;400&display=swap');
+
+/* the style will work on screens larger than 768px */
+@media(min-width: 768px){
+    /* taking all the default settings */
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    /* applying a gradient background color to the body */
+    body{
+        background: rgb(199,154,174);
+        background: radial-gradient(circle, rgba(199,154,174,1) 19%, rgba(149,158,168,1) 100%);
+    }
+
+    /* styling header text */
+    .title-text h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    /* setting the position and background color of the table */
+    .card{
+        margin-top: 80px;
+        background-color: rgba(0, 0, 0, 0.309);
+    }
+
+    /* adding a cursor pointer in the registration link */
+     .link-danger{
+        cursor: pointer;
+    }
+
+}
+

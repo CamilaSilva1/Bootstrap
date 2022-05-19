@@ -1,0 +1,111 @@
+<!-- Created by Camila Silva
+     Since 09/05/2022
+     Login page in Html, Css and JavaScript
+     A part of the style was developed in Bootstrap 
+     This Html is responsible for the login page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- project css -->
+    <link rel="stylesheet" href="../css/styleLogin.css">
+    
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!-- Page title -->
+    <title>vize login</title>
+</head>
+<body>
+    <!--  HEADER -->
+
+    <!-- simple header containing a page title -->
+    <header id="navbar-title">
+        <div class="title-text mt-3 px-4">
+            <!-- title header -->
+            <h1>vize solutions</h1>
+        </div>
+    </header>
+
+    <!-- BODY -->
+
+    <!-- this main tag will have the entire body of the login page -->
+    <main id="main">
+        <!-- main div -->
+        <div class="mt-4 container text-center">
+            <!-- User login form -->
+            <!-- the form is divided into divs to separate the inputs -->
+            <form class="form-login">
+                <!-- form title -->
+                <h1>Entrar</h1>
+                <!-- input email -->
+                <div class="form-group">
+                    <div class="col-md-8 offset-md-2 mt-4 form-floating">
+                        <input type="email"
+                               class="form-control"
+                               id="email"
+                               placeholder="Usuário"
+                               required>
+    
+                        <label for="email">Usuário</label>
+                    </div>
+                </div>
+
+                <!-- input password -->
+                <div class="form-group">
+                    <div class="col-md-8 offset-md-2 mt-4 form-floating">
+                        <input type="password"
+                               class="form-control"
+                               id="password"
+                               placeholder="Senha"
+                               required>
+    
+                        <label for="password">Senha</label>
+                        <i id="seePw" type="button" class="bi bi-eye-slash"></i>
+                    </div>
+                </div>
+
+                <!-- button login div -->
+                <!-- the button is calling an external js function to log in with firebase -->
+                <div class="mb-3 mt-4 btn-login">
+                    <button id="btnLogin" type="button" class="btn btn-primary">login</button>
+                </div>
+
+                <!-- line separating the button -->
+                <div class="divide">
+                    <hr>
+                </div>
+
+                <!-- div containing the link to the registration page -->
+                <div class="text-register">
+                    <p>Não possui uma conta?</p>
+                    <!-- the link is calling an external js function to go 
+                    to the registration screen -->
+                    <a onclick="registerScreen()" class="link-danger">Cadastre-se</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+<!-- calling external js -->
+<!-- js for user to log in and authenticate to firebase -->
+<script type="module" src="../script/loginUser.js"></script>
+
+<!-- js for the user to navigate between html pages -->
+<script src="../script/pages.js"></script>
+
+<!-- calling js to show password in input -->
+<script src="../script/hidePw.js"></script>
+
+</html>
